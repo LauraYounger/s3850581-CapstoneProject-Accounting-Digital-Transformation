@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
-import image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Our Team',
+  title: 'Accounting Digital Transformation | Team',
+  description: 'Capstone Project | Client Proposal Platform',
 }
 
 const teamMembers = [
