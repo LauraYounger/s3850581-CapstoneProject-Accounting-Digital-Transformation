@@ -11,28 +11,34 @@ const teamMembers = [
     role: 'Project Manager',
     image: '/team/minh.jpg',
     blurb:
-      'blurb for Minh',
+      'Manages project timelines, coordinates team members, deliverables and ensures that the project is completed on time and within budget.',
   },
   {
     name: 'Laura Younger',
     role: 'Developer',
     image: '/team/laura.jpg',
     blurb:
-      'blurb for Laura',
+      'Develops and implements front-end and back-end features of the Accounting Digital Transformation project, ensuring that the project is functional and meets the requirements of our stakeholders.',
   },
   {
     name: 'Motoki Kuwahara',
     role: 'Designer',
     image: '/team/motoki.jpg',
     blurb:
-      'blurb for Motoki',
+      'Designs the user interface and user experience. Creating wireframes, mockups, and prototypes to ensure that the project is visually appealing and user-friendly.',
   },
   {
     name: 'My Huynh Ngoc Giang',
     role: 'Business Analyst',
     image: '/team/my.jpg',
+    blurb:'Gathers and documents client requirements, bridges communication between stakeholders and the development team, and ensures that the project meets the needs of our clients.',
+  },
+  {
+    name: 'Nathan Phan',
+    role: 'Developer 2',
+    image: '/team/nathan.jpg',
     blurb:
-      'blurb for My',
+      'Second developer on the team, Supports feature development, writing tests, maintaining code quality, and collaborating with the team to ensure that the project is delivered successfully.',
   }
 ]
 
@@ -41,16 +47,15 @@ export default function TeamPage() {
     <div className="space-y-8">
       <div className="text-center">
         <p className="text-sm font-medium uppercase tracking-wider text-zinc-500">
-          Meet the team
+          Accounting Digital Transformation Project
         </p>
 
         <h1 className="mt-2 text-3xl font-bold tracking-tight">
-          Our Team
+          Capstone Project
         </h1>
 
         <p className="mx-auto mt-3 max-w-2xl text-sm text-zinc-500">
-          Meet the people behind our Accounting Digital Transformation
-          project.
+          Client Proposal Platform
         </p>
       </div>
 
