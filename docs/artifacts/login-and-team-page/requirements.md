@@ -1,7 +1,8 @@
 # Login and Team Page Requirements
 
 ## Overview
-This feature consists of a restyled login page and a new team page. The login page is an existing page that will only be restyled, while the team page is a new page in the application. The team page allows users to view the team members and their roles within project group number 85. Each team member will have a profile picture, name, role and a blurb. Users are redirected to the team page after a successful valid login and is unaccessible without a valid login. 
+
+This feature consists of a restyled login page and a new team page. The login page is an existing page that will only be restyled, while the team page is a new page in the application. The team page allows users to view the team members and their roles within project group number 85. Each team member will have a profile picture, name, role and a blurb. Users are redirected to the team page after a successful valid login and is unaccessible without a valid login.
 
 ## functional Requirements
 
