@@ -45,3 +45,7 @@
 | Production build passes all tests and does not break any existing functionality | 
 | Production build passes all tests and does not break any existing functionality | 
 | Pass |
+
+## Final Testing Results
+
+<https://github.com/LauraYounger/s3850581-CapstoneProject-Accounting-Digital-Transformation/blob/feature/login-and-team-page/docs/artifacts/login-and-team-page/images/Merge-request-final-tests.png>
