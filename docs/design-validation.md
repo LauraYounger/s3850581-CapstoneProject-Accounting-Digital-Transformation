@@ -3,7 +3,7 @@
 ## 1. Document Control
 * **Project Name:** Accounting and Digital Transformation – Team 85
 * **Author / BA:** My Huynh Ngoc Giang
-* **Date:** Tuesday, 4 August 2026
+* **Date:** Tuesday, 30 August 2026
 * **Repository Path:** `docs/design-validation.md`
 
 ---
