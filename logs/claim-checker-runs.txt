@@ -1,0 +1,203 @@
+================================================================================
+Timestamp: 2026-10-30T00:51:17.069Z
+Claim: I can claim up to $300 in work-related expenses without spending any money.
+
+Retrieved chunks:
+Chunk 1
+File: SRC-014.md
+File ID: file-AWvzk2FE4eezFfX574gLhr
+Score: 0.8449
+Text: # SRC-014 — Employees guide for work expenses — apportionment and depreciating assets
+
+SOURCE_ID: SRC-014
+SOURCE_TITLE: Employees guide for work expenses — apportionment and depreciating assets
+SOURCE_URL: https://www.ato.gov.au/law/view/pdf?DocId=SAV%2FEGWE%2F00004&PiT=20220629000001&filename=law%2Fview%2Fpdf%2Fsos%2Femployeeguideworkexpenses20220629.pdf
+RETRIEVAL_DATE: 2026-10-10
+CLAIMS_SUPPORTED: T19, T25
+SOURCE_ORGANISATION: Australian Taxation Office
+
+---
+
+CHUNK_ID: SRC-014-CHUNK-01
+SOURCE_ID: SRC-014
+SOURCE_URL: https://www.ato.gov.au/law/view/pdf?DocId=SAV%2FEGWE%2F00004&PiT=20220629000001&filename=law%2Fview%2Fpdf%2Fsos%2Femployeeguideworkexpenses20220629.pdf
+RETRIEVAL_DATE: 2026-10-10
+SECTION: Apportionment
+
+CONTENT:
+Where an expense has both work and private use, only the work-related portion can be claimed.
+
+---
+
+CHUNK_ID: SRC-014-CHUNK-02
+SOURCE_ID: SRC-014
+SOURCE_URL: https://www.ato.gov.au/law/view/pdf?DocId=SAV%2FEGWE%2F00004&PiT=20220629000001&filename=law%2Fview%2Fpdf%2Fsos%2Femployeeguideworkexpenses20220629.pdf
+RETRIEVAL_DATE: 2026-10-10
+SECTION: Depreciating assets
+
+CONTENT:
+An immediate deduction may be available for an eligible asset costing $300 or less where the relevant tests are met.
+
+More expensive eligible assets are generally claimed through decline in value.
+Attributes: {}
+
+Chunk 2
+File: SRC-010.md
+File ID: file-XCtv2BbRgUqxM4h3N8LF7E
+Score: 0.816
+Text: # SRC-010 — Self-education expenses
+
+SOURCE_ID: SRC-010
+SOURCE_TITLE: Self-education expenses
+SOURCE_URL: https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/education-training-and-seminars/self-education-expenses
+RETRIEVAL_DATE: 2026-10-10
+CLAIMS_SUPPORTED: T17, T25
+SOURCE_ORGANISATION: Australian Taxation Office
+
+---
+
+CHUNK_ID: SRC-010-CHUNK-01
+SOURCE_ID: SRC-010
+SOURCE_URL: https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/education-training-and-seminars/self-education-expenses
+RETRIEVAL_DATE: 2026-10-10
+SECTION: Connection to current employment
+
+CONTENT:
+Self-education expenses can be deductible where the study maintains or improves skills or knowledge used in the taxpayer's current employment, or is likely to increase income from those current activities.
+
+---
+
+CHUNK_ID: SRC-010-CHUNK-02
+SOURCE_ID: SRC-010
+SOURCE_URL: https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/education-training-and-seminars/self-education-expenses
+RETRIEVAL_DATE: 2026-10-10
+SECTION: New employment
+
+CONTENT:
+Study expenses are not deductible where the education is undertaken to obtain new employment or change to a different type of employment.
+
+---
+
+CHUNK_ID: SRC-010-CHUNK-03
+SOURCE_ID: SRC-010
+SOURCE_URL: https://www.ato.gov.au/individuals-and-families/income-deductions-offsets-and-records/deductions-you-can-claim/work-related-deductions/education-training-and-seminars/self-education-expenses
+RETRIEVAL_DATE: 2026-10-10
+SECTION: Assets over $300
+
+CONTENT:
+For an eligible depreciating asset used for work-related self-education, an asset costing more than $300 is generally claimed through decline in value over its effective life rather than as an immediate full deduction.
+Attributes: {}
+
+Chunk 3
+File: SRC-004.md
+File ID: file-JfjYu3Lb3uqoxGscifyLmQ
+Score: 0.8031
+Text: # SRC-004 — Working from home expenses
+
+SOURCE_ID: SRC-004
+SOURCE_TITLE: Working from home expenses
+SOURCE_URL: https://www.ato.gov.au/api/public/content/0-b7755b71-423a-413f-8ea9-0cf06cf2857a
+RETRIEVAL_DATE: 2026-10-10
+CLAIMS_SUPPORTED: T09, T28
+SOURCE_ORGANISATION: Australian Taxation Office
+
+---
+
+CHUNK_ID: SRC-004-CHUNK-01
+SOURCE_ID: SRC-004
+SOURCE_URL: https://www.ato.gov.au/api/public/content/0-b7755b71-423a-413f-8ea9-0cf06cf2857a
+RETRIEVAL_DATE: 2026-10-10
+SECTION: Additional running expenses
+
+CONTENT:
+A worker may claim additional running expenses caused by working from home, such as eligible energy, internet, phone and depreciating-asset costs.
+
+Private household use is not deductible.
+
+---
+
+CHUNK_ID: SRC-004-CHUNK-02
+SOURCE_ID: SRC-004
+SOURCE_URL: https://www.ato.gov.au/api/public/content/0-b7755b71-423a-413f-8ea9-0cf06cf2857a
+RETRIEVAL_DATE: 2026-10-10
+SECTION: Occupancy expenses
+
+CONTENT:
+Rent or mortgage-interest type occupancy expenses are only potentially deductible in limited circumstances, such as where part of the home qualifies as a place of business.
+
+Ordinary occasional working from home does not automatically make rent deductible.
+Attributes: {}
+
+Chunk 4
+File: SRC-009.md
+File ID: file-XuwMRMESejqaJuFgVjKUPe
+Score: 0.7944
+Text: # SRC-009 — Mobile phone and internet work-use apportionment
+
+SOURCE_ID: SRC-009
+SOURCE_TITLE: Mobile phone and internet work-use apportionment
+SOURCE_URL: https://www.ato.gov.au/api/public/content/0-554c72bf-4a6f-4c3c-850f-17ae931e8489
+RETRIEVAL_DATE: 2026-10-10
+CLAIMS_SUPPORTED: T16
+SOURCE_ORGANISATION: Australian Taxation Office
+
+---
+
+CHUNK_ID: SRC-009-CHUNK-01
+SOURCE_ID: SRC-009
+SOURCE_URL: https://www.ato.gov.au/api/public/content/0-554c72bf-4a6f-4c3c-850f-17ae931e8489
+RETRIEVAL_DATE: 2026-10-10
+SECTION: Work-use percentage
+
+CONTENT:
+Where a phone plan is used for both work and private purposes, only the work-related percentage is deductible.
+
+A representative usage record can be used to calculate the work-use proportion where appropriate.
+Attributes: {}
+
+Chunk 5
+File: SRC-012.md
+File ID: file-2TEe3AKQm6NuGPAcLSYXQo
+Score: 0.7931
+Text: # SRC-012 — Record keeping exceptions for work expenses
+
+SOURCE_ID: SRC-012
+SOURCE_TITLE: Record keeping exceptions for work expenses
+SOURCE_URL: https://www.ato.gov.au/law/view/document?LocID=%22TXR%2FTR20201%2FNAT%2FATO%2FatH37%22&PiT=20251112000001
+RETRIEVAL_DATE: 2026-10-10
+CLAIMS_SUPPORTED: T07, T18
+SOURCE_ORGANISATION: Australian Taxation Office
+
+---
+
+CHUNK_ID: SRC-012-CHUNK-01
+SOURCE_ID: SRC-012
+SOURCE_URL: https://www.ato.gov.au/law/view/document?LocID=%22TXR%2FTR20201%2FNAT%2FATO%2FatH37%22&PiT=20251112000001
+RETRIEVAL_DATE: 2026-10-10
+SECTION: $300 work-expense threshold
+
+CONTENT:
+The $300 rule is a substantiation exception, not a deduction by itself.
+
+The taxpayer must actually incur deductible expenses and must still be able to explain how the claim was calculated.
+
+---
+
+CHUNK_ID: SRC-012-CHUNK-02
+SOURCE_ID: SRC-012
+SOURCE_URL: https://www.ato.gov.au/law/view/document?LocID=%22TXR%2FTR20201%2FNAT%2FATO%2FatH37%22&PiT=20251112000001
+RETRIEVAL_DATE: 2026-10-10
+SECTION: Laundry up to $150
+
+CONTENT:
+A laundry claim of $150 or less can fall within a written-evidence exception, but the taxpayer still needs a reasonable basis or record showing how the amount was worked out.
+Attributes: {}
+
+Generated answer:
+Verdict: Not supported  
+Explanation: The $300 rule is only a record-keeping exception; you must actually incur deductible expenses and explain the calculation.   
+Source: Record keeping exceptions for work expenses  
+Section: $300 work-expense threshold  
+URL: https://www.ato.gov.au/law/view/document?LocID=%22TXR%2FTR20201%2FNAT%2FATO%2FatH37%22&PiT=20251112000001  
+Retrieval date: 2026-10-10
+

@@ -23,6 +23,9 @@
   },
   "devDependencies": {
     "lefthook": "^1.11.13",
-    "next": "16.3.4"
+    "next": "16.4.1"
+  },
+  "dependencies": {
+    "openai": "^7.32.0"
   }
 }
