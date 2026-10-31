@@ -89,6 +89,15 @@ function appendRunLog(run) {
     "Generated answer:",
     run.answer,
     "",
+    "Reviewer decision:",
+    run.reviewer_decision ?? "Not reviewed",
+    "",
+    "Reviewer reason:",
+    run.reviewer_reason ?? "",
+    "",
+    "Edited answer:",
+    run.edited_answer ?? "",
+    "",
   ].join("\n");
 
   fs.appendFileSync(
@@ -98,7 +107,75 @@ function appendRunLog(run) {
   );
 }
 
-async function runClaim(claim) {
+async function getReviewerDecision(rl, answer) {
+  console.log("\n--- Reviewer Step ---\n");
+  console.log("1. Approve");
+  console.log("2. Edit");
+  console.log("3. Reject");
+
+  let choice = "";
+
+  while (!["1", "2", "3"].includes(choice)) {
+    choice = (
+      await rl.question(
+        "\nChoose reviewer decision (1, 2 or 3): "
+      )
+    ).trim();
+
+    if (!["1", "2", "3"].includes(choice)) {
+      console.log("Please enter 1, 2 or 3.");
+    }
+  }
+
+  if (choice === "1") {
+    return {
+      reviewer_decision: "Approve",
+      reviewer_reason: "",
+      edited_answer: "",
+    };
+  }
+
+  if (choice === "2") {
+    console.log("\nCurrent answer:\n");
+    console.log(answer);
+
+    const editedAnswer = (
+      await rl.question(
+        "\nEnter the edited answer: "
+      )
+    ).trim();
+
+    return {
+      reviewer_decision: "Edit",
+      reviewer_reason: "",
+      edited_answer: editedAnswer,
+    };
+  }
+
+  let rejectionReason = "";
+
+  while (!rejectionReason) {
+    rejectionReason = (
+      await rl.question(
+        "\nEnter reason for rejection: "
+      )
+    ).trim();
+
+    if (!rejectionReason) {
+      console.log(
+        "A rejection reason is required."
+      );
+    }
+  }
+
+  return {
+    reviewer_decision: "Reject",
+    reviewer_reason: rejectionReason,
+    edited_answer: "",
+  };
+}
+
+async function runClaim(claim, rl) {
   const timestamp = getTimestamp();
 
   const response = await client.responses.create({
@@ -153,16 +230,6 @@ async function runClaim(claim) {
   const retrievedChunks = collectFileSearchResults(response);
   const answer = response.output_text ?? "";
 
-  const runRecord = {
-    timestamp,
-    claim,
-    retrieved_chunks: retrievedChunks,
-    answer,
-    response_id: response.id ?? null,
-  };
-
-  appendRunLog(runRecord);
-
   console.log("\n--- Claim Checker Result ---\n");
   console.log(answer);
 
@@ -190,32 +257,68 @@ async function runClaim(claim) {
     });
   }
 
+  const reviewer = await getReviewerDecision(
+    rl,
+    answer
+  );
+
+  const runRecord = {
+    timestamp,
+    claim,
+    retrieved_chunks: retrievedChunks,
+    answer,
+    response_id: response.id ?? null,
+    reviewer_decision: reviewer.reviewer_decision,
+    reviewer_reason: reviewer.reviewer_reason,
+    edited_answer: reviewer.edited_answer,
+    review_timestamp: getTimestamp(),
+  };
+
+  appendRunLog(runRecord);
+
+  console.log("\n--- Review Saved ---\n");
+  console.log(
+    `Decision: ${reviewer.reviewer_decision}`
+  );
+
+  if (reviewer.reviewer_reason) {
+    console.log(
+      `Reason: ${reviewer.reviewer_reason}`
+    );
+  }
+
+  if (reviewer.edited_answer) {
+    console.log("\nEdited answer:");
+    console.log(reviewer.edited_answer);
+  }
+
   console.log("\nRun saved automatically:");
   console.log(`- ${JSONL_LOG}`);
   console.log(`- ${TEXT_LOG}`);
 }
 
+const rl = readline.createInterface({
+  input,
+  output,
+});
+
 const claimFromArgs =
   process.argv.slice(2).join(" ").trim();
 
 if (claimFromArgs) {
-  await runClaim(claimFromArgs);
+  await runClaim(claimFromArgs, rl);
 } else {
-  const rl = readline.createInterface({
-    input,
-    output,
-  });
-
   const claim = (
     await rl.question("Enter tax claim: ")
   ).trim();
 
-  rl.close();
-
   if (!claim) {
     console.error("No claim entered.");
+    rl.close();
     process.exit(1);
   }
 
-  await runClaim(claim);
+  await runClaim(claim, rl);
 }
+
+rl.close();
