@@ -17,8 +17,8 @@ if (!VECTOR_STORE_ID) {
 }
 
 const LOG_DIR = path.resolve("logs");
-const JSONL_LOG = path.join(LOG_DIR, "claim-checker-runs.jsonl");
-const TEXT_LOG = path.join(LOG_DIR, "claim-checker-runs.txt");
+const JSONL_LOG = path.join(LOG_DIR, "w5-scenarios-test-runs.jsonl");
+const TEXT_LOG = path.join(LOG_DIR, "w5-scenarios-test-runs.txt");
 
 fs.mkdirSync(LOG_DIR, { recursive: true });
 
